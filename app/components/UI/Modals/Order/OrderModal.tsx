@@ -30,12 +30,12 @@ export const OrderModal: FC = ({}) => {
         <ModalContent className={`p-8`}>
           <ModalHeader className="grid text-center p-0 mb-5">
             <h2 className="text-black dark:text-white text-3xl sm:text-4xl mb-2 ">
-              Need a Website?
+              Нужен сайт?
             </h2>
             <p className="text-gray text-sm font-normal">
-              Fill out the form, and we will contact you via email you shortly
-              to help you choose the best pricing plan, discuss the details, and
-              start developing your website.
+              Заполните форму, и мы свяжемся с вами по электронной почте в
+              ближайшее время, чтобы помочь выбрать лучший тарифный план,
+              обсудить детали и начать разработку вашего сайта.
             </p>
           </ModalHeader>
           <ModalBody className="p-0">
@@ -43,9 +43,9 @@ export const OrderModal: FC = ({}) => {
           </ModalBody>
           <ModalFooter className="grid justify-center p-0 text-xs font-normal mt-2">
             <p className="text-gray">
-              By clicking the button, you agree to the
+              Нажимая кнопку, вы соглашаетесь на
               <Link className="ml-1 text-blue dark:text-green " href={"/"}>
-                processing of personal data.
+                обработку персональных данных.
               </Link>
             </p>
           </ModalFooter>

@@ -36,13 +36,13 @@ export const BannerSendRequest: FC<TBannerSendRequest> = ({}) => {
           className={s.Wrapper}
         >
           <section>
-            <h3 className="text-green">Send us a request</h3>
-            <h2 className="text-black dark:text-white">Need a New Website?</h2>
+            <h3 className="text-green">Отправьте нам заявку</h3>
+            <h2 className="text-black dark:text-white">Нужен новый сайт?</h2>
             <p className="text-gray">
-              Leave your contacts, and we will contact you to clarify the
-              details and start the site development!
+              Оставьте свои контакты, и мы свяжемся с вами, чтобы уточнить детали
+              и начать разработку сайта!
             </p>
-            <ButtonGradient radius="full" size="md" value="Order A Website" />
+            <ButtonGradient radius="full" size="md" value="Заказать сайт" />
           </section>
         </motion.section>
       </div>
