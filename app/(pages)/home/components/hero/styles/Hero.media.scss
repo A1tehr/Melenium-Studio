@@ -1,0 +1,17 @@
+@media screen and (width <= 580px) {
+    .Hero {
+        .Wrapper {
+            .Content {
+                h2 {
+                    font-weight: 500;
+                }
+                .Actions {
+                    button {
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
