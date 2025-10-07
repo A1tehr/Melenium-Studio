@@ -10,24 +10,24 @@ import Image from "next/image";
 export const HowWeWork: FC = ({}) => {
   const DATA_LIST = [
     {
-      title: "1. Filling out our brief",
-      text: "Our manager contacts you and offers to fill out a website design brief. This way, we can better understand the specifics of your business.",
+      title: "1. Заполнение брифа",
+      text: "Наш менеджер свяжется с вами и предложит заполнить бриф на разработку сайта. Таким образом мы лучше поймем специфику вашего бизнеса.",
     },
     {
-      title: "2. Prototyping",
-      text: "UX specialists prepare the structure of the main page of your future website. At this stage, we also add text content.",
+      title: "2. Прототипирование",
+      text: "UX-специалисты готовят структуру главной страницы вашего будущего сайта. На этом этапе мы также добавляем текстовый контент.",
     },
     {
-      title: "3. Demo version",
-      text: "The designer creates the main page of the site based on the prototype. We send the ready main page to you for approval",
+      title: "3. Демо-версия",
+      text: "Дизайнер создает главную страницу сайта на основе прототипа. Мы отправляем готовую главную страницу вам на утверждение.",
     },
     {
-      title: "4. Site development",
-      text: "When the main page is approved, we move on to work on the structure, design, and content of the internal pages of the site.",
+      title: "4. Разработка сайта",
+      text: "Когда главная страница утверждена, мы переходим к работе над структурой, дизайном и контентом внутренних страниц сайта.",
     },
     {
-      title: "5. Launch and transfer to the owner",
-      text: "When the site is ready and approved, we transfer it to your account and open it for indexing by search engines.",
+      title: "5. Запуск и передача владельцу",
+      text: "Когда сайт готов и утвержден, мы передаем его на ваш аккаунт и открываем для индексации поисковыми системами.",
     },
   ];
   // Animation
@@ -78,11 +78,11 @@ export const HowWeWork: FC = ({}) => {
               viewport={{ amount: 0.2, once: true }}
               className={s.header}
             >
-              <h3 className="text-green">Site creation process</h3>
-              <h2 className="text-black dark:text-white">How We Work</h2>
+              <h3 className="text-green">Процесс создания сайта</h3>
+              <h2 className="text-black dark:text-white">Как мы работаем</h2>
               <p className="text-gray">
-                Our goal is to create a truly effective website for you. To do
-                this, we have divided the development process into stages:
+                Наша цель — создать для вас действительно эффективный сайт. Для этого
+                мы разделили процесс разработки на этапы:
               </p>
             </motion.div>
             <motion.ul

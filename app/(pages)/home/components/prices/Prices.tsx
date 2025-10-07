@@ -18,80 +18,80 @@ export const Prices: FC = ({}) => {
     {
       title: "W-Start",
       price: "$300",
-      info: "This option is for people who do not have time for website development.",
+      info: "Этот вариант для тех, у кого нет времени на разработку сайта.",
       features: [
         {
-          text: "Basic design",
+          text: "Базовый дизайн",
         },
         {
-          text: "2 pages",
+          text: "2 страницы",
         },
         {
-          text: "Adaptive view",
+          text: "Адаптивный вид",
         },
       ],
     },
     {
       title: "W-Base",
       price: "$500",
-      info: "This option is for people who do not have time for website development.",
+      info: "Этот вариант для тех, у кого нет времени на разработку сайта.",
       features: [
         {
-          text: "Simple design",
+          text: "Простой дизайн",
         },
         {
-          text: "3 pages",
+          text: "3 страницы",
         },
         {
-          text: "Adaptive view",
+          text: "Адаптивный вид",
         },
       ],
     },
     {
       title: "W-Growth",
       price: "$700",
-      info: "The best choice for those who need a website in a corporate style with the specifics of their business niche taken into account.",
+      info: "Лучший выбор для тех, кому нужен сайт в корпоративном стиле с учетом специфики их бизнес-ниши.",
       features: [
         {
-          text: "Advanced design",
+          text: "Продвинутый дизайн",
         },
         {
-          text: "4 pages",
+          text: "4 страницы",
         },
         {
-          text: "Adaptive view",
+          text: "Адаптивный вид",
         },
       ],
     },
     {
       title: "W-Ultimate",
       price: "$1100",
-      info: "Exclusive design for those who want to stand out from competitors as much as possible.",
+      info: "Эксклюзивный дизайн для тех, кто хочет максимально выделиться среди конкурентов.",
       features: [
         {
-          text: "Exclusive design",
+          text: "Эксклюзивный дизайн",
         },
         {
-          text: "6 pages",
+          text: "6 страниц",
         },
         {
-          text: "Adaptive view",
+          text: "Адаптивный вид",
         },
       ],
     },
     {
       title: "E-commerce",
       price: "$850",
-      info: "This option is for people who are looking for a online store with easy management.",
+      info: "Этот вариант для тех, кто ищет интернет-магазин с простым управлением.",
       features: [
         {
-          text: "Advanced design",
+          text: "Продвинутый дизайн",
         },
         {
-          text: "4 pages + e-commerce pages",
+          text: "4 страницы + страницы магазина",
         },
         {
-          text: "Adaptive view",
+          text: "Адаптивный вид",
         },
       ],
     },
@@ -127,17 +127,17 @@ export const Prices: FC = ({}) => {
             className={s.Header}
           >
             <motion.h3 variants={animation} custom={1} className="text-green">
-              Our prices
+              Наши цены
             </motion.h3>
             <motion.h2
               variants={animation}
               custom={2}
               className="text-black dark:text-white"
             >
-              How Much Does a Website Cost?
+              Сколько стоит сайт?
             </motion.h2>
             <motion.p variants={animation} custom={3} className="text-gray">
-              We offer five pricing plans, depending on your needs.
+              Мы предлагаем пять тарифных планов в зависимости от ваших потребностей.
             </motion.p>
           </motion.section>
           <section className={s.Cards}>
@@ -181,7 +181,7 @@ export const Prices: FC = ({}) => {
                   <ButtonGradient
                     radius="sm"
                     size="md"
-                    value="Order a website"
+                    value="Заказать сайт"
                   />
                 </motion.article>
               </Atropos>
@@ -189,7 +189,7 @@ export const Prices: FC = ({}) => {
           </section>
           <section className={s.Integrations}>
             <h4 className="text-gray ">
-              The following integrations can be connected:{" "}
+              Можно подключить следующие интеграции:{" "}
             </h4>
             <Marquee autoFill className={s.marquee} speed={50}>
               <div className={s.introMarquee}>
