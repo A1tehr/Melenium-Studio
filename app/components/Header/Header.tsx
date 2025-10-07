@@ -16,10 +16,9 @@ import s from "./styles/Header.module.scss";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 // Icons
-import { Github, Sun, Moon } from "lucide-react";
+import { Sun, Moon } from "lucide-react";
 // Components
 import { Logo } from "@/app/components/UI/Logo/Logo";
-import { Banner } from "../Banner/Banner";
 import { ButtonGradient } from "../UI/Button/ButtonGradient";
 // Context
 import { useThemeProvider } from "@/providers/ThemeProvider";
@@ -44,128 +43,62 @@ export const Header: FC = ({}) => {
   // Array navigation links
   const DATA_NAVBAR_LINKS = [
     {
-      value: "Our services",
+      value: "Наши услуги",
       href: "ourServices",
     },
     {
-      value: "Portfolio",
+      value: "Портфолио",
       href: "portfolio",
     },
     {
-      value: "Prices",
+      value: "Цены",
       href: "prices",
     },
     {
-      value: "Contacts",
+      value: "Контакты",
       href: "contacts",
     },
   ];
   const DATA_TOGGLE_MENU_LINKS = [
     {
-      title: "Pages",
+      title: "Страницы",
       links: [
         {
-          value: "Our services",
+          value: "Наши услуги",
           href: "ourServices",
         },
         {
-          value: "Portfolio",
+          value: "Портфолио",
           href: "portfolio",
         },
         {
-          value: "Prices",
+          value: "Цены",
           href: "prices",
         },
         {
-          value: "Contacts",
+          value: "Контакты",
           href: "contacts",
         },
       ],
     },
     {
-      title: "Resources",
+      title: "О нас",
       links: [
         {
-          value: "Docs",
-          href: "docs",
-        },
-        {
-          value: "Learn",
-          href: "learn",
-        },
-        {
-          value: "Showcase",
-          href: "showcase",
-        },
-        {
-          value: "Blog",
-          href: "blog",
-        },
-        {
-          value: "Analytics",
-          href: "analytics",
-        },
-        {
-          value: "Previews",
-          href: "previews",
-        },
-      ],
-    },
-    {
-      title: "More",
-      links: [
-        {
-          value: "Commerce",
-          href: "commerce",
-        },
-        {
-          value: "Contact Sales",
-          href: "contactSales",
-        },
-        {
-          value: "GitHub",
-          href: "/",
-        },
-        {
-          value: "Releases",
-          href: "releases",
-        },
-        {
-          value: "Telemetry",
-          href: "telemetry",
-        },
-      ],
-    },
-    {
-      title: "About ",
-      links: [
-        {
-          value: "DevWorkshop + studio",
-          href: "/",
-        },
-        {
-          value: "Open Source Software",
-          href: "/",
-        },
-        {
-          value: "GitHub",
-          href: "/",
-        },
-        {
-          value: "Twitter",
+          value: "WebMelenium Studio",
           href: "/",
         },
       ],
     },
     {
-      title: "Legal ",
+      title: "Юридическая информация",
       links: [
         {
-          value: "Privacy Policy",
+          value: "Политика конфиденциальности",
           href: "/",
         },
         {
-          value: "Cookie Preferences",
+          value: "Настройки Cookie",
           href: "/",
         },
       ],
@@ -174,7 +107,6 @@ export const Header: FC = ({}) => {
 
   return (
     <>
-      <Banner />
       <Navbar
         onMenuOpenChange={setIsMenuOpen}
         isMenuOpen={isMenuOpen}
@@ -196,7 +128,7 @@ export const Header: FC = ({}) => {
               onClick={() => setIsMenuOpen(false)}
             >
               <Logo />
-              <span translate="no">Studio</span>
+              <span translate="no">WebMelenium Studio</span>
             </Link>
             <nav className={s.Nav}>
               <ul>
@@ -217,25 +149,9 @@ export const Header: FC = ({}) => {
                 radius="full"
                 size="md"
                 className={s.Button}
-                value="Order site"
+                value="Заказать сайт"
               />
               <div className={s.Actions}>
-                <Tooltip content="GitHub" size="sm" showArrow>
-                  <div
-                    className={`${s.Social} hover:bg-slate-100 dark:hover:bg-zinc-800`}
-                  >
-                    <Link
-                      target="_blank"
-                      href={"https://github.com/Kirill-H-FrontEnd"}
-                    >
-                      <Github
-                        strokeWidth={1.5}
-                        className="text-gray"
-                        size={20}
-                      />
-                    </Link>
-                  </div>
-                </Tooltip>
                 <button
                   onClick={handleSwitchClick}
                   className={`${s.SwitchTheme} hover:bg-slate-100 dark:hover:bg-zinc-800`}
@@ -289,7 +205,7 @@ export const Header: FC = ({}) => {
               <div
                 className={`${s.Copyright} pt-2 mx-2 text-center text-gray text-sm mt-4  border-t-1 border-gray/10`}
               >
-                © 2023 DevWorkshop Studio, Inc.
+                © 2023 WebMelenium Studio
               </div>
             </NavbarMenu>
           </section>

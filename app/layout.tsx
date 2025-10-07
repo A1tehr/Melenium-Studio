@@ -24,9 +24,9 @@ const font = Inter({
   weight: ["300", "400", "500", "600", "700"],
 });
 export const metadata: Metadata = {
-  title: "WebPoster",
+  title: "WebMelenium Studio",
   description:
-    "Effective websites and the best solutions for your business offered!",
+    "Эффективные веб-сайты и лучшие решения для вашего бизнеса!",
 };
 
 export default function RootLayout({
@@ -35,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="">
+    <html lang="ru" className="">
       <meta
         name="google-site-verification"
         content="MqHzCAHKnBCfXtTVfEc8HaMyBmJCECpOcSf-kTLsOkA"
