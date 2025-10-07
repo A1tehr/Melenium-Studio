@@ -45,9 +45,8 @@ export const Hero: FC = ({}) => {
               className="text-black dark:text-white "
             >
               <div className="bg-light_bg border-1 border-gray/20 rounded-full py-2 px-3 dark:bg-black_secondary">
-                Effective websites and the best solutions{" "}
-                <span>for your business </span>
-                offered!
+                Эффективные веб-сайты и лучшие решения{" "}
+                <span>для вашего бизнеса</span>
               </div>
             </motion.h2>
             <motion.h1
@@ -56,21 +55,21 @@ export const Hero: FC = ({}) => {
               translate="no"
               className="text-transparent bg-clip-text bg-gradient-to-br from-blue to-green "
             >
-              WebPoster Studio
+              WebMelenium Studio
             </motion.h1>
             <motion.p custom={3} variants={animation} className="text-gray">
-              We develop websites for you using state-of-the-art technology that
-              really boost your business and generate revenue. Contact us now
-              for more details.
+              Мы разрабатываем для вас веб-сайты, используя самые современные технологии,
+              которые действительно развивают ваш бизнес и приносят доход. Свяжитесь с нами
+              прямо сейчас для получения дополнительной информации.
             </motion.p>
             <motion.div custom={4} variants={animation} className={s.Actions}>
-              <ButtonGradient radius="full" size="md" value="Order A Website" />
+              <ButtonGradient radius="full" size="md" value="Заказать сайт" />
               <Button
                 onClick={scrollToElement}
                 size="md"
                 className="bg-transparent text-green"
               >
-                Why Us?
+                Почему мы?
                 <IoIosArrowRoundForward size={20} />
               </Button>
             </motion.div>

@@ -14,67 +14,67 @@ import Image from "next/image";
 export const OurServices: FC = ({}) => {
   const DATA_TABS = [
     {
-      title_tab: "Landing pages",
+      title_tab: "Лендинги",
       image: "/OurServices/img.jpg",
       content: {
-        title: "Landing Pages for Advertising Launch",
-        info: "One-page sites created according to all the rules of effective landing pages.",
+        title: "Посадочные страницы для запуска рекламы",
+        info: "Одностраничные сайты, созданные по всем правилам эффективных лендингов.",
         features: [
           {
             value:
-              "Are a perfect fit for launching paid advertising in social media and Google Ads.",
+              "Идеально подходят для запуска платной рекламы в социальных сетях и Google Ads.",
           },
           {
             value:
-              "Convenient for quick testing of your hypotheses and analysis of consumer demand.",
+              "Удобны для быстрого тестирования ваших гипотез и анализа потребительского спроса.",
           },
           {
             value:
-              "Bright, simple, not overloaded with unnecessary information. The development takes about 10 days.",
+              "Яркие, простые, не перегруженные лишней информацией. Разработка занимает около 10 дней.",
           },
         ],
       },
     },
     {
-      title_tab: "Multi-page sites",
+      title_tab: "Многостраничные сайты",
       image: "/OurServices/Multi-site.jpg",
       content: {
-        title: "Tell Potential Clients About Yourself",
-        info: "Order a large, stylish website that will introduce your audience to your services and products.",
+        title: "Расскажите потенциальным клиентам о себе",
+        info: "Закажите большой стильный сайт, который познакомит вашу аудиторию с вашими услугами и продуктами.",
         features: [
           {
             value:
-              "You can get more free organic traffic from search results with optimized content.",
+              "Вы можете получить больше бесплатного органического трафика из результатов поиска с оптимизированным контентом.",
           },
           {
             value:
-              "Increase brand awareness and user loyalty with a large, stylish, and functional website.",
+              "Повысьте узнаваемость бренда и лояльность пользователей с помощью большого, стильного и функционального сайта.",
           },
           {
             value:
-              "Great opportunity for you to tell in detail about each type of your goods and/or services.",
+              "Отличная возможность для вас подробно рассказать о каждом виде ваших товаров и/или услуг.",
           },
         ],
       },
     },
     {
-      title_tab: "Online stores",
+      title_tab: "Интернет-магазины",
       image: "/OurServices/StoreImg.jpg",
       content: {
-        title: "Start selling goods and services online!",
-        info: "Accept orders and payments through a stylish and functional online store.",
+        title: "Начните продавать товары и услуги онлайн!",
+        info: "Принимайте заказы и платежи через стильный и функциональный интернет-магазин.",
         features: [
           {
             value:
-              "The number of products in the online store is not limited. We help with the initial setup and add your products.",
+              "Количество товаров в интернет-магазине не ограничено. Мы помогаем с первоначальной настройкой и добавляем ваши товары.",
           },
           {
             value:
-              "Product cards can be optimized for SEO for promotion in Google search results.",
+              "Карточки товаров могут быть оптимизированы для SEO для продвижения в результатах поиска Google.",
           },
           {
             value:
-              "With the simple interface, you will be able to easily add new products and make any changes yourself in the future.",
+              "С помощью простого интерфейса вы сможете легко добавлять новые товары и вносить любые изменения самостоятельно в будущем.",
           },
         ],
       },
@@ -104,19 +104,19 @@ export const OurServices: FC = ({}) => {
           >
             <section className={s.Header}>
               <motion.h3 variants={animation} custom={1} className="text-green">
-                What we develop
+                Что мы разрабатываем
               </motion.h3>
               <motion.h2
                 variants={animation}
                 custom={2}
                 className="text-black dark:text-white"
               >
-                Our Services
+                Наши услуги
               </motion.h2>
               <motion.p variants={animation} custom={3} className="text-gray">
-                We develop websites of any complexity, from simple one-pagers to
-                online stores. One thing remains unchanged: the quality of our
-                work and the attention to detail.
+                Мы разрабатываем сайты любой сложности: от простых одностраничных
+                до интернет-магазинов. Неизменным остается одно: качество нашей
+                работы и внимание к деталям.
               </motion.p>
             </section>
           </motion.section>
