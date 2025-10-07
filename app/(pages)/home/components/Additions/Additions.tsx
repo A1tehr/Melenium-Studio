@@ -18,39 +18,39 @@ export const Additions: FC = ({}) => {
   const DATA_CARDS = [
     {
       icon: <AiFillApple />,
-      title: "Corporate logo",
-      info: "Do you need to design a new logo or redo an old one? Our experienced designer will gladly take care of it.",
-      price: "$100 per 1 logo",
+      title: "Корпоративный логотип",
+      info: "Вам нужно разработать новый логотип или переделать старый? Наш опытный дизайнер с радостью позаботится об этом.",
+      price: "$100 за 1 логотип",
     },
     {
       icon: <AiFillCopy />,
-      title: "Copywriting",
-      info: "We offer professional text content for your website. From copy for landing pages to expert blog articles.",
-      price: "$15 per 100 words",
+      title: "Копирайтинг",
+      info: "Мы предлагаем профессиональный текстовый контент для вашего сайта. От текстов для лендингов до экспертных статей для блога.",
+      price: "$15 за 100 слов",
     },
     {
       icon: <FaUserSecret />,
-      title: "Webmaster hours",
-      info: "Our technical specialist will help with any integrations and further improvements of your site.",
-      price: "$75 per 5 hours",
+      title: "Часы веб-мастера",
+      info: "Наш технический специалист поможет с любыми интеграциями и дальнейшими улучшениями вашего сайта.",
+      price: "$75 за 5 часов",
     },
     {
       icon: <IoIosCart />,
-      title: "Adding products",
-      info: "We will help you fill your site with products and add categories and meta tags for each product and section.",
-      price: "from $1 per product",
+      title: "Добавление товаров",
+      info: "Мы поможем заполнить ваш сайт товарами и добавить категории и мета-теги для каждого товара и раздела.",
+      price: "от $1 за товар",
     },
     {
       icon: <BsCardImage />,
-      title: "Selecting images",
-      info: "We can carefully select high-quality and unhackneyed stock images and fill your site with them.",
-      price: "$5 per image",
+      title: "Подбор изображений",
+      info: "Мы можем тщательно подобрать высококачественные и небанальные изображения и заполнить ими ваш сайт.",
+      price: "$5 за изображение",
     },
     {
       icon: <SiCampaignmonitor />,
-      title: "Website transfer",
-      info: "We will help you move to our platform, preserving your design and position in search engines as much as possible.",
-      price: "the price is negotiable",
+      title: "Перенос сайта",
+      info: "Мы поможем перенести ваш сайт на новую платформу, сохраняя ваш дизайн и позиции в поисковых системах максимально.",
+      price: "цена договорная",
     },
   ];
   // Animation
@@ -76,19 +76,19 @@ export const Additions: FC = ({}) => {
             className={s.Header}
           >
             <motion.h3 variants={animation} custom={1} className="text-green">
-              What else can we do?
+              Что еще мы можем сделать?
             </motion.h3>
             <motion.h2
               variants={animation}
               custom={2}
               className="text-black dark:text-white"
             >
-              Additional Services
+              Дополнительные услуги
             </motion.h2>
             <motion.p variants={animation} custom={3} className="text-gray">
-              Weblium Studio can take over all the work on promotion, content
-              management, and site improvements that are not included in your
-              pricing plan.
+              WebMelenium Studio может взять на себя всю работу по продвижению,
+              управлению контентом и улучшению сайта, которые не входят в ваш
+              тарифный план.
             </motion.p>
           </motion.section>
           <section className={s.Cards}>

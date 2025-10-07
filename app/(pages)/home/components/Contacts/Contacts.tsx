@@ -32,18 +32,18 @@ export const Contacts: FC = ({}) => {
             variants={animation}
             className={s.Info}
           >
-            <h3 className="text-green">Need a website?</h3>
+            <h3 className="text-green">Нужен сайт?</h3>
             <h2 className="text-black dark:text-white">
-              Do You Want to Order a New Website?
+              Хотите заказать новый сайт?
             </h2>
             <p className="text-gray">
-              Fill out the form, and we will contact you shortly to help you
-              choose the best pricing plan and discuss all the nuances.
+              Заполните форму, и мы свяжемся с вами в ближайшее время, чтобы
+              помочь выбрать лучший тарифный план и обсудить все нюансы.
             </p>
             <p className="text-gray">
-              We will take all your wishes in terms of structure, design, and
-              content into account and will develop a modern, effective, and
-              beautiful website for your business.
+              Мы учтем все ваши пожелания к структуре, дизайну и контенту и
+              разработаем современный, эффективный и красивый сайт для вашего
+              бизнеса.
             </p>
           </motion.section>
           <ContactForm />

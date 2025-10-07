@@ -18,26 +18,26 @@ export const FAQ: FC = ({}) => {
   };
   const DATA_ACCORDION = [
     {
-      title: "Are there any additional payments?",
-      text: "The price indicated on this site includes only the cost of site development. Additionally, you will need to pay for a website subscription on the Weblium platform.",
+      title: "Есть ли дополнительные платежи?",
+      text: "Цена, указанная на сайте, включает только стоимость разработки сайта. Дополнительно вам нужно будет оплатить хостинг и домен сайта.",
     },
     {
-      title: "Will SEO promotion of a ready website be effective?",
-      text: "Certainly. Websites are built on our own Weblium platform that is SEO-friendly. You will not have any difficulties with website promotion in search engines.",
+      title: "Будет ли эффективным SEO-продвижение готового сайта?",
+      text: "Конечно. Сайты создаются с учетом всех требований SEO. У вас не возникнет трудностей с продвижением сайта в поисковых системах.",
     },
     {
-      title: "How can we speed up the process of creating a website?",
-      text: "The minimum term for creating a landing page is 10 days. If you need a ready website faster, we ask you to prepare all materials and information to be used on the website in advance, as well as to promptly respond to our account managers. Having all the necessary information and reducing the time allotted for filling out the brief and approvals, we can make your site faster.",
-    },
-    {
-      title:
-        "You have sent me a demo of the homepage, but I don’t like it, what should I do?",
-      text: "If you are not satisfied with the design of the main page, we will take your comments into account, select new references, and our designer will make another version of the main page based on the new information.",
+      title: "Как можно ускорить процесс создания сайта?",
+      text: "Минимальный срок создания лендинга — 10 дней. Если вам нужен готовый сайт быстрее, просим заранее подготовить все материалы и информацию, которые будут использоваться на сайте, а также оперативно отвечать нашим менеджерам.",
     },
     {
       title:
-        "Is it possible to decline your services and get a refund for the site?",
-      text: "If you are not satisfied with the quality of the Weblium Studio's services, you can request a full refund until the design of the main page is confirmed. If the site is approved and transferred to your account on our platform, the project is considered closed, and the funds spent on its development are non-refundable.",
+        "Вы прислали мне демо главной страницы, но мне оно не нравится, что делать?",
+      text: "Если вас не устраивает дизайн главной страницы, мы учтем ваши комментарии, подберем новые референсы, и наш дизайнер сделает другую версию главной страницы на основе новой информации.",
+    },
+    {
+      title:
+        "Можно ли отказаться от ваших услуг и получить возврат средств за сайт?",
+      text: "Если вас не устраивает качество услуг WebMelenium Studio, вы можете запросить полный возврат средств до утверждения дизайна главной страницы. Если сайт утвержден и передан вам, проект считается закрытым, и средства, потраченные на его разработку, не возвращаются.",
     },
   ];
   // Animation
@@ -68,18 +68,18 @@ export const FAQ: FC = ({}) => {
                 custom={1}
                 className="text-green "
               >
-                Additional information
+                Дополнительная информация
               </motion.h3>
               <motion.h2
                 variants={animation}
                 custom={2}
                 className="text-black dark:text-white"
               >
-                Frequently Asked Questions
+                Часто задаваемые вопросы
               </motion.h2>
               <motion.p variants={animation} custom={3} className="text-gray">
-                If you still have other questions about the site development,
-                our managers will be happy to advise you personally.
+                Если у вас остались другие вопросы о разработке сайта, наши
+                менеджеры с радостью проконсультируют вас лично.
               </motion.p>
             </motion.div>
             <Accordion
