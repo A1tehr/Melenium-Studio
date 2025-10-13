@@ -22,23 +22,23 @@ export const Table: FC = ({}) => {
     },
     {
       title: "W-Start",
-      price: "$300",
+      price: "28 500₽",
     },
     {
       title: "W-Base",
-      price: "$500",
+      price: "47 500₽",
     },
     {
       title: "W-Growth",
-      price: "$700",
+      price: "66 500₽",
     },
     {
       title: "W-Ultimate",
-      price: "$1100",
+      price: "104 500₽",
     },
     {
       title: "E-commerce",
-      price: "$850",
+      price: "80 750₽",
     },
   ];
   const DATA_TABLE_BODY = [
