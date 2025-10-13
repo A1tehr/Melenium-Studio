@@ -44,7 +44,7 @@ export const Footer: FC = ({}) => {
           <section className={s.Content}>
             <Link className={s.Logo} href={"/"}>
               <Logo />
-              <span translate="no">WebMelenium Studio</span>
+              <span translate="no">ebMelenium Studio</span>
             </Link>
             <ul className={s.Actions}>
               {DATA_ACTIONS.map((item, i) => (

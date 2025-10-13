@@ -128,7 +128,7 @@ export const Header: FC = ({}) => {
               onClick={() => setIsMenuOpen(false)}
             >
               <Logo />
-              <span translate="no">WebMelenium Studio</span>
+              <span translate="no">ebMelenium Studio</span>
             </Link>
             <nav className={s.Nav}>
               <ul>
@@ -205,7 +205,7 @@ export const Header: FC = ({}) => {
               <div
                 className={`${s.Copyright} pt-2 mx-2 text-center text-gray text-sm mt-4  border-t-1 border-gray/10`}
               >
-                © 2023 WebMelenium Studio
+                © 2025 WebMelenium Studio
               </div>
             </NavbarMenu>
           </section>

@@ -27,10 +27,10 @@ export const CookieModal: FC = ({}) => {
           />
           <section>
             <h4 className="text-[18px] font-semibold text-black dark:text-white">
-              Сайт использует куки!
+              Текст про куки
             </h4>
             <p className="text-xs md:text-sm font-normal text-gray dark:text-gray leading-6">
-              Этому сайту для корректной работы необходимо использовать куки!
+              Текст про куки
             </p>
           </section>
         </section>
