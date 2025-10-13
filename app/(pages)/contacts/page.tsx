@@ -2,6 +2,13 @@
 import { FC } from "react";
 // Components
 import { TitleBannerPage } from "@/app/components/TitleBannerPage/TitleBannerPage";
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+  title: "WebMelenium Studio | Контакты",
+  description:
+      "Эффективные веб-сайты и лучшие решения для вашего бизнеса!",
+};
 
 const Contacts: FC = ({}) => {
   return (

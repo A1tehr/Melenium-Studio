@@ -24,9 +24,12 @@ const font = Inter({
   weight: ["300", "400", "500", "600", "700"],
 });
 export const metadata: Metadata = {
-  title: "WebMelenium Studio",
+  title: "WebMelenium Studio | Разработка веб-приложений",
   description:
     "Эффективные веб-сайты и лучшие решения для вашего бизнеса!",
+  icons: {
+    icon: "favicon.svg", // путь относительно /public
+  },
 };
 
 export default function RootLayout({
