@@ -3,9 +3,9 @@ import { FC } from "react";
 // Next
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "WebPoster | Prices",
+  title: "WebMelenium Studio | Цены",
   description:
-    "Effective websites and the best solutions for your business offered!",
+    "Эффективные веб-сайты и лучшие решения для вашего бизнеса!",
 };
 // Components
 import { TitleBannerPage } from "@/app/components/TitleBannerPage/TitleBannerPage";
@@ -17,9 +17,9 @@ const Prices: FC = ({}) => {
   return (
     <>
       <TitleBannerPage
-        title="How Much Does a Website Cost?"
-        supTitle="Our Prices"
-        text="We offer five pricing plans, depending on your needs."
+        title="Сколько стоит сайт?"
+        subtitle="Наши цены"
+        description="Мы предлагаем пять тарифных планов в зависимости от ваших потребностей."
       />
       <Table />
       <Card />

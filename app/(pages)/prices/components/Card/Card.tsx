@@ -6,329 +6,330 @@ import { motion } from "framer-motion";
 
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import { ButtonGradient } from "@/app/components/UI/Button/ButtonGradient";
-type TCard = {};
 
 export const Card: FC = ({}) => {
   const DATA_CARDS = [
     {
       title: "W-Start",
-      price: "$300",
-      info: "This option is for people who do not have time for website development.",
+      price: "28 500₽",
+      info: "Этот вариант для тех, у кого нет времени на разработку сайта.",
       features: [
         {
-          title: "Design type:",
-          value: "Basic design",
+          title: "Тип дизайна:",
+          value: "Базовый дизайн",
         },
         {
-          title: "Number of pages:",
+          title: "Количество страниц:",
           value:
-            "3 – Homepage, 404 page, 1 generic pages from list: About, Contacts, Services, FAQ, Team, Portfolio, Careers or Pricing",
+            "3 – Главная страница, страница 404, 1 общая страница из списка: О компании, Контакты, Услуги, FAQ, Команда, Портфолио, Карьера или Цены",
         },
         {
-          title: "Prototyping (all pages):",
-          value: "Included",
+          title: "Прототипирование (все страницы):",
+          value: "Включено",
         },
         {
-          title: "The software on which the design is developed:",
-          value: "WebPoster",
+          title: "Программное обеспечение для разработки дизайна:",
+          value: "WebMelenium",
         },
         {
-          title: "Mobile version:",
-          value: "Included. Responsive design based on the Weblium editor",
+          title: "Мобильная версия:",
+          value: "Включено. Адаптивный дизайн",
         },
         {
-          title: "Logo creation:",
-          value: "Text logo (vector format is not included)",
+          title: "Создание логотипа:",
+          value: "Текстовый логотип (векторный формат не включен)",
         },
         {
-          title: "Images:",
-          value: "Stock images",
+          title: "Изображения:",
+          value: "Стоковые изображения",
         },
         {
-          title: "Icons:",
-          value: "Icons from Weblium base",
+          title: "Иконки:",
+          value: "Иконки из базы WebMelenium",
         },
         {
-          title: "Editing photos to match your common site style:",
-          value: "No",
+          title: "Редактирование фотографий под стиль сайта:",
+          value: "Нет",
         },
         {
-          title: "Animation:",
-          value: "Animations that are available in the editor",
+          title: "Анимации:",
+          value: "Анимации, доступные в редакторе",
         },
         {
-          title: "Pop-up creation:",
-          value: "1 pop-up from the list: Contact form or Promo information",
+          title: "Создание всплывающих окон:",
+          value: "1 всплывающее окно из списка: Контактная форма или Промо-информация",
         },
         {
-          title: "Backgrounds editing:",
-          value: "No",
+          title: "Редактирование фонов:",
+          value: "Нет",
         },
         {
-          title: "Number of edits included:",
+          title: "Количество правок включено:",
           value: "2",
         },
         {
-          title: "Discount on filling your site with content:",
-          value: "No",
+          title: "Скидка на наполнение сайта контентом:",
+          value: "Нет",
         },
       ],
     },
     {
       title: "W-Base",
-      price: "$500",
-      info: "This option is for people who do not have time for website development.",
+      price: "47 500₽",
+      info: "Этот вариант для тех, у кого нет времени на разработку сайта.",
       features: [
         {
-          title: "Design type:",
+          title: "Тип дизайна:",
           value:
-            "Simple design with the selection of the colour palette, fonts, and backgrounds for your website",
+            "Простой дизайн с подбором цветовой палитры, шрифтов и фонов для вашего сайта",
         },
         {
-          title: "Number of pages:",
+          title: "Количество страниц:",
           value:
-            "4 – Homepage, 404 page, 2 generic pages from list: About, Contacts, Services, FAQ, Team, Portfolio, Careers or Pricing",
+            "4 – Главная страница, страница 404, 2 общие страницы из списка: О компании, Контакты, Услуги, FAQ, Команда, Портфолио, Карьера или Цены",
         },
         {
-          title: "Prototyping (all pages):",
-          value: "Included",
+          title: "Прототипирование (все страницы):",
+          value: "Включено",
         },
         {
-          title: "The software on which the design is developed:",
-          value: "WebPoster",
+          title: "Программное обеспечение для разработки дизайна:",
+          value: "WebMelenium",
         },
         {
-          title: "Mobile version:",
-          value: "Included. Responsive design based on the Weblium editor",
+          title: "Мобильная версия:",
+          value: "Включено. Адаптивный дизайн",
         },
         {
-          title: "Logo creation:",
-          value: "Text logo (vector format is not included)",
+          title: "Создание логотипа:",
+          value: "Текстовый логотип (векторный формат не включен)",
         },
         {
-          title: "Images:",
-          value: "Stock images",
+          title: "Изображения:",
+          value: "Стоковые изображения",
         },
         {
-          title: "Stock icons",
+          title: "Иконки:",
+          value: "Стоковые иконки",
         },
         {
-          title: "Editing photos to match your common site style:",
-          value: "No",
+          title: "Редактирование фотографий под стиль сайта:",
+          value: "Нет",
         },
         {
-          title: "Animation:",
-          value: "Animations that are available in the editor",
+          title: "Анимации:",
+          value: "Анимации, доступные в редакторе + анимации с использованием CSS",
         },
         {
-          title: "Pop-up creation:",
-          value: "2 pop-ups from the list: Contact form or Promo information",
+          title: "Создание всплывающих окон:",
+          value: "2 всплывающих окна из списка: Контактная форма или Промо-информация",
         },
         {
-          title: "Backgrounds editing:",
-          value: "Adding different shades",
+          title: "Редактирование фонов:",
+          value: "Добавление различных оттенков",
         },
         {
-          title: "Number of edits included:",
+          title: "Количество правок включено:",
           value: "2",
         },
         {
-          title: "Discount on filling your site with content:",
+          title: "Скидка на наполнение сайта контентом:",
           value: "10%",
         },
       ],
     },
     {
       title: "W-Growth",
-      price: "$700",
-      info: "The best choice for those who need a website in a corporate style with the specifics of their business niche taken into account.",
+      price: "66 500₽",
+      info: "Лучший выбор для тех, кому нужен сайт в корпоративном стиле с учетом специфики их бизнес-ниши.",
       features: [
         {
-          title: "Design type:",
+          title: "Тип дизайна:",
           value:
-            "Advanced design that includes the selection of the color palette, fonts, and backgrounds, as well as using gradients",
+            "Продвинутый дизайн, включающий подбор цветовой палитры, шрифтов и фонов, а также использование градиентов",
         },
         {
-          title: "Number of pages:",
-          value: "5 – Homepage, 404 page, 3 generic pages",
+          title: "Количество страниц:",
+          value: "5 – Главная страница, страница 404, 3 общие страницы",
         },
         {
-          title: "Prototyping (all pages):",
-          value: "Included",
+          title: "Прототипирование (все страницы):",
+          value: "Включено",
         },
         {
-          title: "The software on which the design is developed:",
-          value: "WebPoster",
+          title: "Программное обеспечение для разработки дизайна:",
+          value: "WebMelenium",
         },
         {
-          title: "Mobile version:",
+          title: "Мобильная версия:",
           value:
-            "Included. Responsive design based on the Weblium editor and custom CSS",
+            "Включено. Адаптивный дизайн и пользовательский CSS",
         },
         {
-          title: "Logo creation:",
-          value: "Text logo in vector format",
+          title: "Создание логотипа:",
+          value: "Текстовый логотип в векторном формате",
         },
         {
-          title: "Images:",
-          value: "Stock images",
+          title: "Изображения:",
+          value: "Отредактированные стоковые изображения",
         },
         {
-          title: "Stock icons",
+          title: "Иконки:",
+          value: "Стоковые иконки",
         },
         {
-          title: "Editing photos to match your common site style:",
-          value: "Included",
+          title: "Редактирование фотографий под стиль сайта:",
+          value: "Включено",
         },
         {
-          title: "Animation:",
-          value: "Creating animations using CSS",
+          title: "Анимации:",
+          value: "Создание анимаций с использованием CSS",
         },
         {
-          title: "Pop-up creation:",
-          value: "2 pop-ups ",
+          title: "Создание всплывающих окон:",
+          value: "2 всплывающих окна",
         },
         {
-          title: "Backgrounds editing:",
-          value: "Adding different shades and gradients",
+          title: "Редактирование фонов:",
+          value: "Добавление различных оттенков и градиентов",
         },
         {
-          title: "Number of edits included:",
+          title: "Количество правок включено:",
           value: "2",
         },
         {
-          title: "Discount on filling your site with content:",
+          title: "Скидка на наполнение сайта контентом:",
           value: "15%",
         },
       ],
     },
     {
       title: "W-Ultimate",
-      price: "$1100",
-      info: "Exclusive design for those who want to stand out from competitors as much as possible.",
+      price: "104 500₽",
+      info: "Эксклюзивный дизайн для тех, кто хочет максимально выделиться среди конкурентов.",
       features: [
         {
-          title: "Design type:",
+          title: "Тип дизайна:",
           value:
-            "Exclusive design that includes the creation of unique icons, images, and backgrounds",
+            "Эксклюзивный дизайн, включающий создание уникальных иконок, изображений и фонов",
         },
         {
-          title: "Number of pages:",
-          value: "7 – Homepage, 404 page, 5 generic pages",
+          title: "Количество страниц:",
+          value: "7 – Главная страница, страница 404, 5 общих страниц",
         },
         {
-          title: "Prototyping (all pages):",
-          value: "Included",
+          title: "Прототипирование (все страницы):",
+          value: "Включено",
         },
         {
-          title: "The software on which the design is developed:",
-          value: "WebPoster",
+          title: "Программное обеспечение для разработки дизайна:",
+          value: "WebMelenium",
         },
         {
-          title: "Mobile version:",
+          title: "Мобильная версия:",
           value:
-            "Included. Responsive design based on the Weblium editor and custom CSS",
+            "Включено. Адаптивный дизайн и пользовательский CSS",
         },
         {
-          title: "Logo creation:",
-          value: "Text logo in vector format",
+          title: "Создание логотипа:",
+          value: "Текстовый логотип в векторном формате",
         },
         {
-          title: "Images:",
-          value: "Stock images",
+          title: "Изображения:",
+          value: "Отредактированные стоковые изображения",
         },
         {
-          title: "Stock icons",
-          value: "Exclusive icons created by our designer",
+          title: "Иконки:",
+          value: "Эксклюзивные иконки, созданные нашим дизайнером",
         },
         {
-          title: "Editing photos to match your common site style:",
-          value: "Included",
+          title: "Редактирование фотографий под стиль сайта:",
+          value: "Включено",
         },
         {
-          title: "Animation:",
-          value: "Creating animations using CSS and JS",
+          title: "Анимации:",
+          value: "Создание анимаций с использованием CSS и JS",
         },
         {
-          title: "Pop-up creation:",
-          value: "3 pop-ups ",
+          title: "Создание всплывающих окон:",
+          value: "3 всплывающих окна",
         },
         {
-          title: "Backgrounds editing:",
-          value: "Adding gradients, images, and complex geometric shapes",
+          title: "Редактирование фонов:",
+          value: "Добавление градиентов, изображений и сложных геометрических форм",
         },
         {
-          title: "Number of edits included:",
+          title: "Количество правок включено:",
           value: "3",
         },
         {
-          title: "Discount on filling your site with content:",
+          title: "Скидка на наполнение сайта контентом:",
           value: "20%",
         },
       ],
     },
     {
       title: "E-commerce",
-      price: "$850",
-      info: "This option is for people who are looking for a online store with easy management.",
+      price: "80 750₽",
+      info: "Этот вариант для тех, кто ищет интернет-магазин с простым управлением.",
       features: [
         {
-          title: "Design type:",
+          title: "Тип дизайна:",
           value:
-            "Basic design with an option of using gradients on the backgrounds when needed",
+            "Простой дизайн с возможностью использования градиентов на фонах при необходимости",
         },
         {
-          title: "Number of pages:",
+          title: "Количество страниц:",
           value:
-            "5+ – Homepage, 404 page, 3 generic and e-commerce template pages",
+            "5+ – Главная страница, страница 404, 3 общие страницы и шаблонные страницы магазина",
         },
         {
-          title: "Prototyping (all pages):",
-          value: "Included",
+          title: "Прототипирование (все страницы):",
+          value: "Включено",
         },
         {
-          title: "The software on which the design is developed:",
-          value: "WebPoster",
+          title: "Программное обеспечение для разработки дизайна:",
+          value: "WebMelenium",
         },
         {
-          title: "Mobile version:",
+          title: "Мобильная версия:",
           value:
-            "Included. Responsive design based on the Weblium editor and custom CSS",
+            "Включено. Адаптивный дизайн и пользовательский CSS",
         },
         {
-          title: "Logo creation:",
-          value: "Text logo in vector format",
+          title: "Создание логотипа:",
+          value: "Текстовый логотип в векторном формате",
         },
         {
-          title: "Images:",
-          value: "Stock images",
+          title: "Изображения:",
+          value: "Отредактированные стоковые изображения",
         },
         {
-          title: "Stock icons",
-          value: "Stock icons",
+          title: "Иконки:",
+          value: "Стоковые иконки",
         },
         {
-          title: "Editing photos to match your common site style:",
-          value: "Included",
+          title: "Редактирование фотографий под стиль сайта:",
+          value: "Включено",
         },
         {
-          title: "Animation:",
-          value: "Creating animations using CSS",
+          title: "Анимации:",
+          value: "Создание анимаций с использованием CSS",
         },
         {
-          title: "Pop-up creation:",
-          value: "2 pop-ups ",
+          title: "Создание всплывающих окон:",
+          value: "2 всплывающих окна",
         },
         {
-          title: "Backgrounds editing:",
-          value: "Adding gradients and complex geometric shapes",
+          title: "Редактирование фонов:",
+          value: "Добавление градиентов и сложных геометрических форм",
         },
         {
-          title: "Number of edits included:",
-          value: "2",
+          title: "Количество правок включено:",
+          value: "3",
         },
         {
-          title: "Discount on filling your site with content:",
+          title: "Скидка на наполнение сайта контентом:",
           value: "15%",
         },
       ],
@@ -368,7 +369,7 @@ export const Card: FC = ({}) => {
                 <p className="text-gray">{card.info}</p>
               </div>
               <Accordion className="px-0 py-3" isCompact>
-                <AccordionItem className="font-semibold " title="Learn more">
+                <AccordionItem className="font-semibold " title="Узнать больше">
                   {card.features.map((item, i) => (
                     <div key={i} className="text-sm mb-3">
                       <h5 className="text-black dark:text-white font-medium">
@@ -382,7 +383,7 @@ export const Card: FC = ({}) => {
               <ButtonGradient
                 radius="sm"
                 size="md"
-                value="Order a website"
+                value="Заказать сайт"
                 className=" w-full"
               />
             </motion.article>

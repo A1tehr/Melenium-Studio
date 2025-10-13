@@ -22,52 +22,52 @@ export const Table: FC = ({}) => {
     },
     {
       title: "W-Start",
-      price: "$300",
+      price: "28 500₽",
     },
     {
       title: "W-Base",
-      price: "$500",
+      price: "47 500₽",
     },
     {
       title: "W-Growth",
-      price: "$700",
+      price: "66 500₽",
     },
     {
       title: "W-Ultimate",
-      price: "$1100",
+      price: "104 500₽",
     },
     {
       title: "E-commerce",
-      price: "$850",
+      price: "80 750₽",
     },
   ];
   const DATA_TABLE_BODY = [
     {
       row: [
         {
-          title: "Design type",
+          title: "Тип дизайна",
         },
         {
-          info: "Basic design. This option is for people who do not have time for website development.",
+          info: "Базовый дизайн. Этот вариант для тех, у кого нет времени на разработку сайта.",
         },
         {
-          info: "Simple design with the selection of the color palette, fonts, and backgrounds for your website",
+          info: "Простой дизайн с подбором цветовой палитры, шрифтов и фонов для вашего сайта",
         },
         {
-          info: "Advanced design that includes the selection of the color palette, fonts, and backgrounds, as well as using gradients",
+          info: "Продвинутый дизайн, включающий подбор цветовой палитры, шрифтов и фонов, а также использование градиентов",
         },
         {
-          info: "Exclusive design that includes the creation of unique icons, images, and backgrounds",
+          info: "Эксклюзивный дизайн, включающий создание уникальных иконок, изображений и фонов",
         },
         {
-          info: "Simple design with an option of using gradients on the backgrounds when needed",
+          info: "Простой дизайн с возможностью использования градиентов на фонах при необходимости",
         },
       ],
     },
     {
       row: [
         {
-          title: "Number of pages",
+          title: "Количество страниц",
         },
         {
           info: "3",
@@ -89,7 +89,7 @@ export const Table: FC = ({}) => {
     {
       row: [
         {
-          title: "Prototyping (all pages)",
+          title: "Прототипирование (все страницы)",
         },
         {
           info: (
@@ -141,29 +141,29 @@ export const Table: FC = ({}) => {
     {
       row: [
         {
-          title: "The software on which the design is developed",
+          title: "Программное обеспечение для разработки дизайна",
         },
         {
-          info: "WebPoster",
+          info: "WebMelenium",
         },
         {
-          info: "WebPoster",
+          info: "WebMelenium",
         },
         {
-          info: "WebPoster",
+          info: "WebMelenium",
         },
         {
-          info: "WebPoster",
+          info: "WebMelenium",
         },
         {
-          info: "WebPoster",
+          info: "WebMelenium",
         },
       ],
     },
     {
       row: [
         {
-          title: "Mobile version",
+          title: "Мобильная версия",
         },
         {
           info: (
@@ -215,73 +215,73 @@ export const Table: FC = ({}) => {
     {
       row: [
         {
-          title: "Logo creation",
+          title: "Создание логотипа",
         },
         {
-          info: "Text logo (vector format is not included)",
+          info: "Текстовый логотип (векторный формат не включен)",
         },
         {
-          info: "Text logo (vector format is not included)",
+          info: "Текстовый логотип (векторный формат не включен)",
         },
         {
-          info: "Text logo in vector format",
+          info: "Текстовый логотип в векторном формате",
         },
         {
-          info: "Text logo in vector format",
+          info: "Текстовый логотип в векторном формате",
         },
         {
-          info: "Text logo in vector format",
-        },
-      ],
-    },
-    {
-      row: [
-        {
-          title: "Images",
-        },
-        {
-          info: "Stock images",
-        },
-        {
-          info: "Stock images",
-        },
-        {
-          info: "Edited stock images",
-        },
-        {
-          info: "Edited stock images",
-        },
-        {
-          info: "Edited stock images",
+          info: "Текстовый логотип в векторном формате",
         },
       ],
     },
     {
       row: [
         {
-          title: "Icons",
+          title: "Изображения",
         },
         {
-          info: "Icons from WebPoster base",
+          info: "Стоковые изображения",
         },
         {
-          info: "Stock icons",
+          info: "Стоковые изображения",
         },
         {
-          info: "Stock icons",
+          info: "Отредактированные стоковые изображения",
         },
         {
-          info: "Exclusive icons created by our designer",
+          info: "Отредактированные стоковые изображения",
         },
         {
-          info: "Stock icons",
+          info: "Отредактированные стоковые изображения",
         },
       ],
     },
     {
       row: [
         {
-          title: "Editing photos to match your common site style",
+          title: "Иконки",
+        },
+        {
+          info: "Иконки из базы WebMelenium",
+        },
+        {
+          info: "Стоковые иконки",
+        },
+        {
+          info: "Стоковые иконки",
+        },
+        {
+          info: "Эксклюзивные иконки, созданные нашим дизайнером",
+        },
+        {
+          info: "Стоковые иконки",
+        },
+      ],
+    },
+    {
+      row: [
+        {
+          title: "Редактирование фотографий под стиль сайта",
         },
         {
           info: <X strokeWidth={2} className="text-red-300" size={18} />,
@@ -321,103 +321,103 @@ export const Table: FC = ({}) => {
     {
       row: [
         {
-          title: "Animations",
+          title: "Анимации",
         },
         {
-          info: "Animations that are available in the editor",
+          info: "Анимации, доступные в редакторе",
         },
         {
-          info: "Animations that are available in the editor + animations using CSS",
+          info: "Анимации, доступные в редакторе + анимации с использованием CSS",
         },
         {
-          info: "Creating animations using CSS",
+          info: "Создание анимаций с использованием CSS",
         },
         {
-          info: "Creating animations using CSS and JS",
+          info: "Создание анимаций с использованием CSS и JS",
         },
         {
-          info: "Creating animations using CSS",
-        },
-      ],
-    },
-    {
-      row: [
-        {
-          title: "Pop-up creation",
-        },
-        {
-          info: (
-            <Check
-              strokeWidth={2}
-              className="text-blue dark:text-green"
-              size={18}
-            />
-          ),
-        },
-        {
-          info: (
-            <Check
-              strokeWidth={2}
-              className="text-blue dark:text-green"
-              size={18}
-            />
-          ),
-        },
-        {
-          info: (
-            <Check
-              strokeWidth={2}
-              className="text-blue dark:text-green"
-              size={18}
-            />
-          ),
-        },
-        {
-          info: (
-            <Check
-              strokeWidth={2}
-              className="text-blue dark:text-green"
-              size={18}
-            />
-          ),
-        },
-        {
-          info: (
-            <Check
-              strokeWidth={2}
-              className="text-blue dark:text-green"
-              size={18}
-            />
-          ),
+          info: "Создание анимаций с использованием CSS",
         },
       ],
     },
     {
       row: [
         {
-          title: "Backgrounds editing",
+          title: "Создание всплывающих окон",
+        },
+        {
+          info: (
+            <Check
+              strokeWidth={2}
+              className="text-blue dark:text-green"
+              size={18}
+            />
+          ),
+        },
+        {
+          info: (
+            <Check
+              strokeWidth={2}
+              className="text-blue dark:text-green"
+              size={18}
+            />
+          ),
+        },
+        {
+          info: (
+            <Check
+              strokeWidth={2}
+              className="text-blue dark:text-green"
+              size={18}
+            />
+          ),
+        },
+        {
+          info: (
+            <Check
+              strokeWidth={2}
+              className="text-blue dark:text-green"
+              size={18}
+            />
+          ),
+        },
+        {
+          info: (
+            <Check
+              strokeWidth={2}
+              className="text-blue dark:text-green"
+              size={18}
+            />
+          ),
+        },
+      ],
+    },
+    {
+      row: [
+        {
+          title: "Редактирование фонов",
         },
         {
           info: <X strokeWidth={2} className="text-red-300" size={18} />,
         },
         {
-          info: "Adding different shades",
+          info: "Добавление различных оттенков",
         },
         {
-          info: "Adding different shades and gradients",
+          info: "Добавление различных оттенков и градиентов",
         },
         {
-          info: "Adding gradients, images, and complex geometric shapes",
+          info: "Добавление градиентов, изображений и сложных геометрических форм",
         },
         {
-          info: "Adding gradients and complex geometric shapes",
+          info: "Добавление градиентов и сложных геометрических форм",
         },
       ],
     },
     {
       row: [
         {
-          title: "Number of edits included",
+          title: "Количество правок включено",
         },
         {
           info: "2",
@@ -439,7 +439,7 @@ export const Table: FC = ({}) => {
     {
       row: [
         {
-          title: "Discount on filling your site with content",
+          title: "Скидка на наполнение сайта контентом",
         },
         {
           info: <X strokeWidth={2} className="text-red-300" size={18} />,
