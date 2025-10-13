@@ -99,7 +99,7 @@ export const Header: FC = ({}) => {
         },
         {
           value: "Настройки Cookie",
-          href: "/",
+          href: "/cookie-settings",
         },
       ],
     },
