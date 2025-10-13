@@ -1,9 +1,6 @@
 "use client";
-import Link from "next/link";
 import { FC, useEffect, useState } from "react";
 import s from "./CookieModal.module.scss";
-// NextUI
-import { Button } from "@nextui-org/react";
 import { X } from "lucide-react";
 
 export const CookieModal: FC = ({}) => {
@@ -30,11 +27,10 @@ export const CookieModal: FC = ({}) => {
           />
           <section>
             <h4 className="text-[18px] font-semibold text-black dark:text-white">
-              Приветствуем вас👋!
+              Сайт использует куки!
             </h4>
             <p className="text-xs md:text-sm font-normal text-gray dark:text-gray leading-6">
-              Этот сайт является шаблоном для веб-студии разработки и не
-              используется в коммерческих целях. Приятного просмотра!
+              Этому сайту для корректной работы необходимо использовать куки!
             </p>
           </section>
         </section>
