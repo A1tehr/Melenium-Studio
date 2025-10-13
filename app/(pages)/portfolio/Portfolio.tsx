@@ -86,8 +86,8 @@ export const PortfolioPage: FC = () => {
     <>
       <TitleBannerPage
         title="Портфолио"
-        subtitle="Наши работы"
-        description="Ознакомьтесь с нашими последними проектами и убедитесь в качестве нашей работы"
+        supTitle="Наши работы"
+        text="Ознакомьтесь с нашими последними проектами и убедитесь в качестве нашей работы"
       />
       <section className={`${s.Portfolio} bg-white dark:bg-black`}>
         <div className="container">
