@@ -95,7 +95,7 @@ export const Header: FC = ({}) => {
       links: [
         {
           value: "Политика конфиденциальности",
-          href: "/",
+          href: "/privacy-policy",
         },
         {
           value: "Настройки Cookie",
