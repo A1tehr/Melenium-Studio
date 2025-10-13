@@ -1,32 +1,33 @@
 .CookieModal {
-    width: 500px;
+    max-width: 450px;
+    width: 100%;
     z-index: 200;
     visibility: hidden;
     opacity: 0;
-    animation: CookieModal 0.5s ease forwards 2s;
-    section {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-row-gap: 10px;
-    }
+    animation: CookieModalSlide 0.5s ease forwards 1.5s;
 }
+
 // ! Media
 @media screen and (width <= 768px) {
     .CookieModal {
+        max-width: 100%;
         width: 100%;
+        right: 0 !important;
+        left: 0 !important;
+        border-radius: 0;
     }
 }
 
 // ! KeyFrames
-@keyframes CookieModal {
+@keyframes CookieModalSlide {
     from {
         visibility: hidden;
         opacity: 0;
-        transform: translate(0px, 100px);
+        transform: translateX(100px);
     }
     to {
         visibility: visible;
         opacity: 1;
-        transform: translate(0px, 0px);
+        transform: translateX(0);
     }
 }
