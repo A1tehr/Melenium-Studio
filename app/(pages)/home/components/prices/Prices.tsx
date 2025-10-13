@@ -17,7 +17,7 @@ export const Prices: FC = ({}) => {
   const DATA_CARDS = [
     {
       title: "W-Start",
-      price: "$300",
+      price: "28 500₽",
       info: "Этот вариант для тех, у кого нет времени на разработку сайта.",
       features: [
         {
@@ -33,7 +33,7 @@ export const Prices: FC = ({}) => {
     },
     {
       title: "W-Base",
-      price: "$500",
+      price: "47 500₽",
       info: "Этот вариант для тех, у кого нет времени на разработку сайта.",
       features: [
         {
@@ -49,7 +49,7 @@ export const Prices: FC = ({}) => {
     },
     {
       title: "W-Growth",
-      price: "$700",
+      price: "66 500₽",
       info: "Лучший выбор для тех, кому нужен сайт в корпоративном стиле с учетом специфики их бизнес-ниши.",
       features: [
         {
@@ -65,7 +65,7 @@ export const Prices: FC = ({}) => {
     },
     {
       title: "W-Ultimate",
-      price: "$1100",
+      price: "104 500₽",
       info: "Эксклюзивный дизайн для тех, кто хочет максимально выделиться среди конкурентов.",
       features: [
         {
@@ -81,7 +81,7 @@ export const Prices: FC = ({}) => {
     },
     {
       title: "E-commerce",
-      price: "$850",
+      price: "80 750₽",
       info: "Этот вариант для тех, кто ищет интернет-магазин с простым управлением.",
       features: [
         {
