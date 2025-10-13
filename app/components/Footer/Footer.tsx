@@ -30,7 +30,7 @@ export const Footer: FC = ({}) => {
         },
         {
           value: "Настройки Cookie",
-          href: "/",
+          href: "/cookie-settings",
         },
       ],
     },
