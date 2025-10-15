@@ -11,61 +11,21 @@ import { ExternalLink, Calendar } from "lucide-react";
 import { TitleBannerPage } from "@/app/components/TitleBannerPage/TitleBannerPage";
 import { BannerSendRequest } from "@/app/components/BannerSendRequest/BannerSendRequest";
 
+import Image from 'next/image'
+
+import project1Image from '../../assets/images/portfolio/project1.png';
+
 export const PortfolioPage: FC = () => {
   const DATA_PROJECTS = [
     {
-      title: "Корпоративный сайт для IT-компании",
+      title: "Психологический центр развидия",
       category: "Веб-разработка",
       description:
-        "Современный корпоративный сайт с адаптивным дизайном, анимациями и интеграцией CRM-системы.",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      date: "Январь 2024",
-      image: "/portfolio/project1.jpg",
-    },
-    {
-      title: "Интернет-магазин модной одежды",
-      category: "E-commerce",
-      description:
-        "Полнофункциональный интернет-магазин с корзиной, системой оплаты и личным кабинетом пользователя.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      date: "Декабрь 2023",
-      image: "/portfolio/project2.jpg",
-    },
-    {
-      title: "Лендинг для стартапа",
-      category: "Landing Page",
-      description:
-        "Привлекательный одностраничный сайт с формами заявок и интеграцией аналитики.",
-      technologies: ["React", "SCSS", "EmailJS"],
-      date: "Ноябрь 2023",
-      image: "/portfolio/project3.jpg",
-    },
-    {
-      title: "Портал для онлайн-обучения",
-      category: "Веб-платформа",
-      description:
-        "Образовательная платформа с системой курсов, тестирования и отслеживания прогресса.",
-      technologies: ["Next.js", "PostgreSQL", "Prisma", "NextAuth"],
-      date: "Октябрь 2023",
-      image: "/portfolio/project4.jpg",
-    },
-    {
-      title: "Сайт ресторана с онлайн-бронированием",
-      category: "Веб-разработка",
-      description:
-        "Элегантный сайт ресторана с меню, галереей и системой онлайн-бронирования столиков.",
-      technologies: ["React", "Node.js", "Express", "MongoDB"],
-      date: "Сентябрь 2023",
-      image: "/portfolio/project5.jpg",
-    },
-    {
-      title: "Корпоративный портал для логистической компании",
-      category: "Веб-приложение",
-      description:
-        "Внутренний портал для управления заказами, отслеживания грузов и взаимодействия с клиентами.",
-      technologies: ["React", "Redux", "Node.js", "PostgreSQL"],
-      date: "Август 2023",
-      image: "/portfolio/project6.jpg",
+        "Современный коммерческий сайт с адаптивным дизайном, СЕО оптимизаций, анимациями и административной панелью",
+      technologies: ["React", "Python", "Tailwind CSS", "PostgreSQL"],
+      date: "Октябрь 2025",
+      image: project1Image,
+      url: "https://vita-psy.com/"
     },
   ];
 
@@ -106,7 +66,7 @@ export const PortfolioPage: FC = () => {
                 custom={2}
                 className="text-black dark:text-white"
               >
-                Работы, которыми мы гордимся
+                Некоторые работы, которыми мы гордимся
               </motion.h2>
               <motion.p variants={animation} custom={3} className="text-gray">
                 За время работы мы реализовали множество проектов различной сложности для клиентов из разных отраслей.
@@ -125,12 +85,30 @@ export const PortfolioPage: FC = () => {
                   className={`${s.ProjectCard} bg-white dark:bg-black_secondary border-1 border-gray/10 rounded-lg`}
                 >
                   <div className={s.ProjectImage}>
-                    <div className={`${s.ImagePlaceholder} bg-gradient-to-br from-blue/20 to-green/20`}>
-                      <div className="text-gray text-center">
-                        <ExternalLink size={48} className="mx-auto mb-2 opacity-30" />
-                        <p className="text-sm">Пример проекта</p>
-                      </div>
-                    </div>
+                    <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block h-full w-full"
+                    >
+                      {project.image ? (
+                          <div className={s.ImagePlaceholder}>
+                            <Image
+                                src={project.image}
+                                alt="Пример проекта"
+                                fill
+                                className="object-cover"
+                            />
+                          </div>
+                      ) : (
+                          <div className={`${s.ImagePlaceholder} bg-gradient-to-br from-blue/20 to-green/20`}>
+                            <div className="text-gray text-center">
+                              <ExternalLink size={48} className="mx-auto mb-2 opacity-30" />
+                              <p className="text-sm">Пример проекта</p>
+                            </div>
+                          </div>
+                      )}
+                    </a>
                   </div>
                   <div className={s.ProjectContent}>
                     <div className={s.ProjectHeader}>

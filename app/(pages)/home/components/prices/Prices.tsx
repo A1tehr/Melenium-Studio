@@ -98,11 +98,9 @@ export const Prices: FC = ({}) => {
   ];
   const DATA_ITEMS_MARQUEE = [
     { img: "/Integrations/lg.svg" },
-    { img: "/Integrations/lg.svg" },
-    { img: "/Integrations/lg.svg" },
-    { img: "/Integrations/lg.svg" },
-    { img: "/Integrations/lg.svg" },
-    { img: "/Integrations/lg.svg" },
+    { img: "/Integrations/amoCRM.svg" },
+    { img: "/Integrations/WhatsApp.svg" },
+    { img: "/Integrations/tg.svg" }
   ];
   // Animation
   const animation = {
@@ -194,9 +192,22 @@ export const Prices: FC = ({}) => {
             <Marquee autoFill className={s.marquee} speed={50}>
               <div className={s.introMarquee}>
                 {DATA_ITEMS_MARQUEE.map((item, i) => (
-                  <div className="opacity-20" key={i}>
-                    <img src={item.img} alt="" />
-                  </div>
+                    <div
+                        className="opacity-20"
+                        key={i}
+                        style={{
+                          display: 'flex',
+                          justifyContent: 'center', // выравнивание по горизонтали
+                          alignItems: 'center',     // выравнивание по вертикали (если нужно)
+                        }}
+                    >
+                      <img
+                          src={item.img}
+                          alt=""
+                          height={50}
+                          style={{ maxHeight: '50px' }}
+                      />
+                    </div>
                 ))}
               </div>
             </Marquee>
